@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Valentine’s</title>
+    <title>Happy Valintins</title>
     <link rel="stylesheet" href="valentine.css">
     <style>
         body {
@@ -17,26 +17,27 @@
         }
         .card {
             position: relative;
-        }
-        .message {
-            color: red;
-            font-size: 3rem;
+            padding: 50px;
         }
         .heart {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: 20px;
-            font-size: 4rem;
+            top: -90px; 
+            font-size: 6rem; 
             color: red;
             animation: pulse 1s infinite alternate;
+        }
+        .message {
+            color: red;
+            font-size: 3rem;
         }
         @keyframes pulse {
             from {
                 transform: translateX(-50%) scale(1);
             }
             to {
-                transform: translateX(-50%) scale(1.2);
+                transform: translateX(-50%) scale(1.3); 
             }
         }
         .button {
@@ -52,7 +53,8 @@
 </head>
 <body>
     <div class="card">
-        <div class="message">Happy <span class="heart">♥</span> Valentine’s rieriee</div>
+        <span class="heart">♥</span> 
+        <div class="message">Happy Valentine’s rieriee</div>
         <button class="button" onclick="showLove()">Tap for Love</button>
     </div>
     <script>
@@ -68,3 +70,4 @@
     </script>
 </body>
 </html>
+
