@@ -57,7 +57,13 @@
     </div>
     <script>
         function showLove() {
-            alert('ang cutiee ni vinceee 💕');
+            let lovePopup = document.createElement("dialog");
+            lovePopup.innerHTML = `
+                <p>ang cutiee ni vinceee 💕</p>
+                <button onclick="this.closest('dialog').close()">TRUEEE</button>
+            `;
+            document.body.appendChild(lovePopup);
+            lovePopup.showModal();
         }
     </script>
 </body>
